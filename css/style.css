@@ -53,12 +53,12 @@ body {
   }
   .gradient {
     font-family: 'Crimson Text', serif;
-    background: radial-gradient(circle at center, #A17A2F, #DDBB6B);
+    background: radial-gradient(circle at center, #DDBB6B, #A17A2F);
     -webkit-background-clip: text;
     color: transparent;
   }
   .gold-icon {
-    background: radial-gradient(circle at center, yellow, gold);
+    background: radial-gradient(circle at center, #DDBB6B, #A17A2F);
     -webkit-background-clip: text;
     color: transparent;
     margin-right: 8px; 
@@ -108,7 +108,7 @@ body {
 #content5 {
   .gradient {
     font-family: 'Crimson Text', serif;
-    background: radial-gradient(circle at center, yellow, gold);
+    background: radial-gradient(circle at center, #DDBB6B, #A17A2F);
     -webkit-background-clip: text;
     color: transparent;
   }
@@ -124,13 +124,13 @@ body {
 #content6 {
   .gradient {
     font-family: 'Crimson Text', serif;
-    background: radial-gradient(circle at center, yellow, gold);
+    background: radial-gradient(circle at center, #DDBB6B, #A17A2F);
     -webkit-background-clip: text;
     color: transparent;
   }
 
   .gold-icon {
-    background: radial-gradient(circle at center, yellow, gold);
+    background: radial-gradient(circle at center, #DDBB6B, #A17A2F);
     -webkit-background-clip: text;
     color: transparent;
     margin-right: 8px; 
