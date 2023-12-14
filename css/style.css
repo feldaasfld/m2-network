@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://db.onlinewebfonts.com/c/ead4092f880f75ff0883ced1856b2c37?family=SF+Pro+Rounded+Regular");
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: 1%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100wh;
+  color: #ffff;
+}
+
+#background {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#content4 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: #ffff;
+  margin-top: 10vh;
+}
+#content4 {
+  h1 {
+    font-weight: 700;
+  }
+  h4 {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 800;
+  }
+  h3 {
+    font-family: 'Crimson Text', serif;
+    font-weight: 700;
+  }
+  #congrats h1 {
+    font-family: 'Crimson Text', sans-serif;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 700;
+    letter-spacing: 3px;
+  }
+  #congrats .badge{
+    font-family: 'Crimson Text', sans-serif;
+    font-size: 24px;
+    font-style: italic;
+    padding: 12px 40px;
+    letter-spacing: 1px;
+    background: #901565;
+  }
+  .gradient {
+    font-family: 'Crimson Text', serif;
+    background: radial-gradient(circle at center, #A17A2F, #DDBB6B);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  .gold-icon {
+    background: radial-gradient(circle at center, yellow, gold);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-right: 8px; 
+  }
+  ul {
+    list-style-type: none; 
+    padding-left: 0; 
+  }
+  #congrats {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media (max-width: 1199px) {
+  #content4 #congrats h1{
+    font-size: 64px;
+  }
+}
+@media (max-width: 767px) {
+  #content4 .container{
+    padding: 20px;
+  }
+  #content4 #congrats {
+    padding-bottom: 40px !important;
+  }
+  #content4 #congrats h1 {
+    font-size: 24px;
+  }
+  #content4 #congrats .badge{
+    width: inherit;
+  }
+
+  #congrats h6,
+  #congrats h4,
+  #congrats h2,
+  #congrats h3,
+  #congrats h6 {
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+#content5 {
+  margin-top: 10vh;
+}
+#content5 {
+  .gradient {
+    font-family: 'Crimson Text', serif;
+    background: radial-gradient(circle at center, yellow, gold);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
+@media (max-height: 998px) {
+  #content5 #heading5 {
+    text-align: start !important;
+  }
+}
+#content6 {
+  margin-top: 10vh;
+}
+#content6 {
+  .gradient {
+    font-family: 'Crimson Text', serif;
+    background: radial-gradient(circle at center, yellow, gold);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .gold-icon {
+    background: radial-gradient(circle at center, yellow, gold);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-right: 8px; 
+  }
+  .corousel {
+    overflow-x: scroll;
+    display: flex;
+    position: relative;
+    white-space: nowrap;
+  }
+  .corousel img{
+    height: 370px;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+}
+@media (max-height: 1024px) {
+  #content6 .content p{
+    font-size: 14px !important;
+  }
+}
+@media (max-height: 768px) {
+  #content6 .content p{
+    font-size: 8px !important;
+  }
+}
+
