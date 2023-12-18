@@ -1,8 +1,17 @@
 
-/* fonts start */
-@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&family=Plus+Jakarta+Sans&display=swap");
-/* font end */
-
+@import url("https://db.onlinewebfonts.com/c/ead4092f880f75ff0883ced1856b2c37?family=SF+Pro+Rounded+Regular");
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+html,
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: 1%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #ffff;
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
 #background {
   background-repeat: no-repeat;
@@ -10,11 +19,6 @@
   background-position: center;
 }
 
-html,
-body {
-  max-width: 100%;
-  overflow-x: hidden;
-}
 /* body end */
 
 /* navbar start */
@@ -359,3 +363,188 @@ body {
 }
 /* responsif phone end */
 
+#content4 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: #ffff;
+  margin-top: 10vh;
+}
+#content4 {
+  h1 {
+    font-weight: 700;
+  }
+  h4 {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 800;
+  }
+  h3 {
+    font-family: 'Crimson Text', serif;
+    font-weight: 700;
+  }
+  #congrats h1 {
+    font-family: 'Crimson Text', sans-serif;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 700;
+    letter-spacing: 3px;
+  }
+  #congrats .badge{
+    font-family: 'Crimson Text', sans-serif;
+    font-size: 24px;
+    font-style: italic;
+    padding: 12px 40px;
+    letter-spacing: 1px;
+    background: #901565;
+  }
+  .gradient {
+    font-family: 'Crimson Text', serif;
+    background: radial-gradient(circle at center, #DDBB6B, #A17A2F);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  .gold-icon {
+    background: radial-gradient(circle at center, #DDBB6B, #A17A2F);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-right: 8px; 
+  }
+  ul {
+    list-style-type: none; 
+    padding-left: 0; 
+  }
+  #congrats {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media (max-width: 1199px) {
+  #content4 #congrats h1{
+    font-size: 64px;
+  }
+}
+@media (max-width: 767px) {
+  #content4 .container{
+    padding: 20px;
+  }
+  #content4 #congrats {
+    text-align: center;
+    align-items: center;
+  }
+
+  #content4 #congrats .row{
+    align-items: center;
+    padding:0% !important;
+    margin: 0 !important;
+  }
+  #content4 #congrats h1 {
+    font-size: 24px;
+  }
+  #content4 #congrats .badge{
+    width: inherit;
+  }
+
+  #congrats h6,
+  #congrats h4,
+  #congrats h2,
+  #congrats h3,
+  #congrats h6 {
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+#content5 {
+  margin-top: 10vh;
+}
+#content5 {
+  .gradient {
+    font-family: 'Crimson Text', serif;
+    background: radial-gradient(circle at center, #DDBB6B, #A17A2F);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
+@media (max-height: 998px) {
+  #content5 #heading5 {
+    text-align: start !important;
+  }
+}
+#content6 {
+  margin-top: 10vh;
+}
+#content6 {
+  .rotating-image {
+    animation: rotate 50s linear infinite;
+  }
+  .gradient {
+    font-family: 'Crimson Text', serif;
+    background: radial-gradient(circle at center, #DDBB6B, #A17A2F);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .gold-icon {
+    background: radial-gradient(circle at center, #DDBB6B, #A17A2F);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-right: 8px; 
+  }
+  .slider{
+    position: relative;
+    display: grid;
+    place-items: center;
+  }
+  .corousel {
+    display: flex;
+    width: calc(280px * 10);
+    padding: 20px 0;
+    animation: scroll 20s linear infinite;
+  }
+  .slide {
+    height: 370px;
+    width: 100%;
+    align-items: center;
+    padding: 15px 0;
+    perspective: 300px;
+  }
+
+  .slider::before{
+    left: 0;
+    top: 0;
+  }
+
+  .slider::after{
+    right: 0;
+    top: 0;
+  }
+
+  .slide img{
+    width: 100%;
+    transition: transform 1s;
+  }
+  .slide img:hover {
+    transform: translateZ(20px);
+  }
+
+  .corousel:hover {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(calc(-250px * 5))
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
