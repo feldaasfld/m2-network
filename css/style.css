@@ -1,13 +1,15 @@
+
 /* fonts start */
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&family=Plus+Jakarta+Sans&display=swap");
 /* font end */
 
-/* body start */
+
 #background {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
+
 html,
 body {
   max-width: 100%;
@@ -356,3 +358,4 @@ body {
   }
 }
 /* responsif phone end */
+
