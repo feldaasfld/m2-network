@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 @import url("https://db.onlinewebfonts.com/c/ead4092f880f75ff0883ced1856b2c37?family=SF+Pro+Rounded+Regular");
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
 
@@ -8,7 +7,6 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  width: 100wh;
   color: #ffff;
 }
 
@@ -83,7 +81,14 @@ body {
     padding: 20px;
   }
   #content4 #congrats {
-    padding-bottom: 40px !important;
+    text-align: center;
+    align-items: center;
+  }
+
+  #content4 #congrats .row{
+    align-items: center;
+    padding:0% !important;
+    margin: 0 !important;
   }
   #content4 #congrats h1 {
     font-size: 24px;
@@ -122,6 +127,9 @@ body {
   margin-top: 10vh;
 }
 #content6 {
+  .rotating-image {
+    animation: rotate 50s linear infinite;
+  }
   .gradient {
     font-family: 'Crimson Text', serif;
     background: radial-gradient(circle at center, #DDBB6B, #A17A2F);
@@ -135,26 +143,62 @@ body {
     color: transparent;
     margin-right: 8px; 
   }
-  .corousel {
-    overflow-x: scroll;
-    display: flex;
+  .slider{
     position: relative;
-    white-space: nowrap;
+    display: grid;
+    place-items: center;
   }
-  .corousel img{
+  .corousel {
+    display: flex;
+    width: calc(280px * 10);
+    padding: 20px 0;
+    animation: scroll 20s linear infinite;
+  }
+  .slide {
     height: 370px;
     width: 100%;
-    transition: transform 0.5s ease-in-out;
+    align-items: center;
+    padding: 15px 0;
+    perspective: 300px;
   }
-}
-@media (max-height: 1024px) {
-  #content6 .content p{
-    font-size: 14px !important;
+
+  .slider::before{
+    left: 0;
+    top: 0;
   }
-}
-@media (max-height: 768px) {
-  #content6 .content p{
-    font-size: 8px !important;
+
+  .slider::after{
+    right: 0;
+    top: 0;
+  }
+
+  .slide img{
+    width: 100%;
+    transition: transform 1s;
+  }
+  .slide img:hover {
+    transform: translateZ(20px);
+  }
+
+  .corousel:hover {
+    animation-play-state: paused;
   }
 }
 
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(calc(-250px * 5))
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
