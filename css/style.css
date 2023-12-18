@@ -456,6 +456,7 @@ body {
 
 #content5 {
   margin-top: 10vh;
+  color: white;
 }
 #content5 {
   .gradient {
@@ -472,6 +473,7 @@ body {
 }
 #content6 {
   margin-top: 10vh;
+  color: white;
 }
 #content6 {
   .rotating-image {
@@ -548,3 +550,4 @@ body {
   100% {
     transform: rotate(360deg);
   }
+}
