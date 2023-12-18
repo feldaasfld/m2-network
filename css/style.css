@@ -282,6 +282,10 @@ input {
   border-radius: 8px;
 }
 
+.has-float-label label::after, .has-float-label>span::after {
+  background: black !important;
+}
+
 /* Responsive tablet */
 @media screen and (max-width: 768px) {
   #doc-one {
