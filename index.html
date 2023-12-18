@@ -1,20 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>M2 Conection</title>
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"/>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
+    <!-- satoshi font -->
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,300,400&display=swap" rel="stylesheet">
+    <!-- icon -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"/>
   </head>
 
-  <body id="background" style="background-image: url(img/background.png)">
 
-    <!-- Page Start -->
+  <body id="background" style="background-image: url(assets/img/background\ body.png)">
+    <!-- start navbar -->
+    <header id="navbar">
+        
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+      <div class="topnav" id="myTopnav" >
+        <a href="#" class="responsive-logo" style="border-style: none;"><img src="assets/img/about-logo.png" alt="" style="width: 100px; height: 100px;"></a>
+        <a href="#home" class="active px-5">Home</a>
+        <a href="#news" class=" px-5">About</a>
+        <a href="#contact" class=" px-5">Product</a>
+        <a class="nav-link position-absolute z-2" id="nav-logo" aria-current="page" href="#"><img src="assets/img/logo.png" alt="" /></a>
+        <a href="#about" class="px-5">Galery</a>
+        <a href="#about" class="px-5">Event</a>
+        <a href="#about" class="px-5" style="border-style: none;">Contact</a>
+        <a href="javascript:void(0);" class="icon" style="border-style: none;" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="javascript:void(0);" class="close-icon" style="border-style: none;" onclick="myFunction()">
+          <img src="assets/img/close-btton.png" alt="">
+        </a>
+      </div>
+    </header>
+    <!-- end navbar -->
+
+    <!-- start hero -->
+    <section id="hero">
+      <div class="container mb-5">
+        <div class="row align-items-center position-relative z-3">
+          <div class="col-md-8 z-3" id="hero1">
+            <h5 class="fst-italic text-warning">M2 NETWORK</h5>
+            <h1 class="text-uppercase text-white">Mulai Langkah baru bersama Kami!</h1>
+            <p class="mb-4 text-white">Ayo, buat perbedaan dan jadilah sumber inspirasi untuk orang-orang di sekitarmu! Bergabunglah dengan kami hari ini.</p>
+            <button type="button" class="btn bgtext-uppercase" style="padding: 24px 48px; font-size: 16px">Bergabung menjadi M2 Member</button>
+            <p class="text-white mt-2">Anda member M2Network? <a href="#">Masuk disini</a></p>
+          </div>
+          <div class="col-md-4 z-2 position-relative" id="hero2">
+            <img src="assets/img/hero-img.png" alt="" class="z-1" />
+       <!-- end hero -->
+
+    <!-- start about us -->
+    <section id="about">
+      <div class="container mt-5">
+        <div class="about-title mx-auto mb-3">
+          <h5 class="mx-auto fst-italic">TENTANG KAMI</h5>
+          <h2 class="mx-auto text-white">Mengenal Kami Lebih Dalam</h2>
+        </div>
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-5 text-center px-3">
+            <img src="assets/img/about-logo.png" alt="" class="img-fluid"/>
+          </div>
+          <div class="col-md-7 py-5 mx-auto">
+            <p class="text-white">
+              M2 Network adalah sebuah perusahaan multi level marketing yang berfokus pada industri kecantikan dan perawatan diri. Kami percaya bahwa kecantikan adalah lebih dari sekadar penampilan luar itu adalah tentang rasa percaya diri
+              yang tumbuh dari perawatan diri yang baik. <br /><br />Kami bangga menjadi bagian dari perjalanan transformasi kecantikan dan percaya bahwa kecantikan sejati berasal dari dalam. Kami mengundang Anda untuk bergabung dengan kami
+              di M2 Network, di mana setiap langkah menuju kecantikan adalah perjalanan yang berharga dan bermakna.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end about us -->
+            
+    <!-- Secondary -->
     <section id="content4">
       <div class="container">
         <div class="row py-5">
@@ -559,13 +623,9 @@
       </div>
     </section>
     <!-- Page End -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
