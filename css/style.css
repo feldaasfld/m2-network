@@ -38,7 +38,14 @@ h4 {
 
 /* Documentation */
 #doc-one {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)), url(../img/doc-one.png);
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 1)
+    ),
+    url(../img/doc-one.png);
   height: auto;
   background-size: cover;
   color: white;
@@ -47,7 +54,14 @@ h4 {
 }
 
 #doc-two {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)), url(../img/doc-two.png);
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 1)
+    ),
+    url(../img/doc-two.png);
   width: 100%;
   height: auto;
   background-size: cover;
@@ -56,7 +70,14 @@ h4 {
 }
 
 #doc-three {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)), url(../img/doc-three.png);
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 1)
+    ),
+    url(../img/doc-three.png);
   width: 100%;
   height: auto;
   background-size: cover;
@@ -65,7 +86,14 @@ h4 {
 }
 
 #doc-four {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)), url(../img/doc-four.png);
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 1)
+    ),
+    url(../img/doc-four.png);
   width: 100%;
   height: auto;
   background-size: cover;
@@ -276,6 +304,10 @@ input {
   background: black !important;
 }
 
+.form-control:focus {
+  background-color: black !important;
+}
+
 #contact .btn-primary {
   justify-content: center;
   align-items: center;
@@ -285,6 +317,22 @@ input {
   border-radius: 8px;
   border: none;
   font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+#last-footer p {
+  background: linear-gradient(to right, #a17a2f, #ddbb8b, #a17a2f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#last-footer .border-top {
+  border-image-source: linear-gradient(
+    to right,
+    #a17a2f,
+    #ddbb8b,
+    #a17a2f
+  ) !important;
+  border-image-slice: 1;
 }
 
 /* Responsive tablet */
