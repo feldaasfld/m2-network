@@ -105,6 +105,10 @@ h4 {
   margin-top: 146px;
 }
 
+#doc-four .text-doc {
+  margin-top: 126px;
+}
+
 #documentation .btn-primary {
   justify-content: center;
   align-items: center;
@@ -329,7 +333,7 @@ input {
   -webkit-text-fill-color: transparent;
 }
 
-#last-footer{
+#last-footer {
   border-top: 2px solid;
   border-image: linear-gradient(to right, #a17a2f, #ddbb8b, #a17a2f);
   border-image-slice: 1;
@@ -345,9 +349,18 @@ input {
   }
 }
 
-/* Responsive Smartphone */
-@media screen and (max-width: 480px) {
+/* Responsive */
+@media screen and (max-width: 1199px) {
+  #doc-two .text-doc {
+    margin-top: 122px;
+  }
+}
 
+/* Responsive */
+@media screen and (max-width: 991px) {
+  #doc-four .text-doc {
+    margin-top: 148px;
+  }
 }
 
 /* body end */
