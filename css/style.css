@@ -318,20 +318,20 @@ input {
   border: none;
   font-family: "Plus Jakarta Sans", sans-serif;
 }
-
 #last-footer p {
+  font-size: 12px;
+}
+
+#last-footer span {
+  font-size: 12px;
   background: linear-gradient(to right, #a17a2f, #ddbb8b, #a17a2f);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-#last-footer .border-top {
-  border-image-source: linear-gradient(
-    to right,
-    #a17a2f,
-    #ddbb8b,
-    #a17a2f
-  ) !important;
+#last-footer{
+  border-top: 2px solid;
+  border-image: linear-gradient(to right, #a17a2f, #ddbb8b, #a17a2f);
   border-image-slice: 1;
 }
 
@@ -347,6 +347,7 @@ input {
 
 /* Responsive Smartphone */
 @media screen and (max-width: 480px) {
+
 }
 
 /* body end */
