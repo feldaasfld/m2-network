@@ -363,6 +363,31 @@ input {
   }
 }
 
+/* Responsive Smartphone */
+@media screen and (max-width: 428px) {
+  .cards {
+    height: 440px;
+    width: 300px;
+    perspective: 10000px;
+    margin-bottom: 180px;
+  }
+
+  .cards .card {
+    padding: 36px;
+    padding-top: 20px;
+  }
+
+  .cards label {
+    width: 302px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  .img-person {
+    top: 312px;
+  }
+}
+
 /* body end */
 
 /* navbar start */
