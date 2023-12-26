@@ -285,6 +285,37 @@ input {
   --current-color2: #404457;
 }
 
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  text-decoration: none;
+}
+
+.prev {
+  left: 298px;
+}
+
+.next {
+  right: 298px;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
 /* Contant */
 #contact div {
   margin-bottom: 25px;
@@ -357,9 +388,82 @@ input {
 }
 
 /* Responsive */
+@media screen and (max-width: 1150px) {
+  .prev {
+    left: 272px;
+  }
+
+  .next {
+    right: 272px;
+  }
+}
+
+/* Responsive */
+@media screen and (max-width: 1075px) {
+  .prev {
+    left: 242px;
+  }
+
+  .next {
+    right: 242px;
+  }
+}
+
+/* Responsive */
 @media screen and (max-width: 991px) {
   #doc-four .text-doc {
     margin-top: 148px;
+  }
+  .prev {
+    left: 198px;
+  }
+
+  .next {
+    right: 198px;
+  }
+}
+
+/* Responsive */
+@media screen and (max-width: 922px) {
+  .prev {
+    left: 152px;
+  }
+
+  .next {
+    right: 152px;
+  }
+}
+
+/* Responsive */
+@media screen and (max-width: 815px) {
+  .prev {
+    left: 102px;
+  }
+
+  .next {
+    right: 102px;
+  }
+}
+
+/* Responsive */
+@media screen and (max-width: 708px) {
+  .prev {
+    left: 54px;
+  }
+
+  .next {
+    right: 54px;
+  }
+}
+
+/* Responsive */
+@media screen and (max-width: 616px) {
+  .prev {
+    left: 18px;
+  }
+
+  .next {
+    right: 18px;
   }
 }
 
